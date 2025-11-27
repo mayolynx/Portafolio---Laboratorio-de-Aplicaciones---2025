@@ -1,0 +1,125 @@
+    <!DOCTYPE html> <!--Con esto se inicia el codigo-->
+    <html lang="es"> <!--Acá seleccionamos el lenguaje (lang es) e iniciamos el codigo (html)-->
+    <head> <!--La parte de la cabecera de la pagina, ahi va el titulo, etc...-->
+        <meta charset="UTF-8"> <!--Las metaetiquetas definen datos sobre la pagina para que el navegador los entienda-->
+        <!-- el charset es el codificador que basicamente traduce los caracteres de un sistema de escritura ingresado por el usuario a un codigo numerico que la pc pueda entender, algunos soportan emojis, otros no, etc-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--con viewport se selecciona el tamaño de la ventana que verá el usuario al usar la pagina web-->
+        <!--"width=device widht" hace que la pagina se adapte al tamaño de la pantalla del dispositivo por el cual el usuario este abriendo la pagina-->
+    <!--"initial scale" indicara que zoom tendra la pagina al iniciarse. 1.0 es para que tenga un 100%, osea que al abrir la pagina estara en su tamaño normal-->
+        <title>✰✰✰✰✰</title> <!-- la etiqueta title sirve para poner el titulo de la pagina, que debe estar dentro del bloque head-->
+        <link rel="stylesheet" href="css/style.css"> <!--con "link" creamos una relación entre el documento HTML y otro recurso externo. Con "rel" indicamos ¿qué es el recurso vinculado? en esta caso una hoja de estilo (css). Con "href" indicamos donde se encuentra el archivo que estamos linkeando, en este caso el archivo es "style.css" y se encuentra en la carpeta "css"-->
+    </head> <!--Acá termina el bloque head-->
+    <body>
+        <header>
+            <h1>✧˖°.Las comisiones de dibujo de Mayo✧˖°. </h1>
+            <nav>
+                <ul>
+                    <li><a href="#Portafolio de dibujos">Portafolio de Dibujos</a></li>
+                    <li><a href="#¿Qué puedo y que no puedo dibujar?">¿Qué puedo y que no puedo dibujar?</a></li>
+                    <li><a href="#Terminos y Condiciones">Terminos y Condiciones</a></li>
+                    <li><a href="#sobre mi arte">Sobre mi arte</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- a continuacion dividire en pestañas las secciones de mi pagina-->
+         <div class="tab">
+            <button class="tablinks" onclick="openSection(event, 'Portafolio de dibujos')">Portafolio de dibujos</button>
+            <button class="tablinks" onclick="openSection(event, '¿Qué puedo y que no puedo dibujar?')">¿Qué puedo y que no puedo dibujar?</button>
+            <button class="tablinks" onclick="openSection(event, 'Terminos y Condiciones')">Terminos y Condiciones</button>
+            <button class="tablinks" onclick="openSection(event, 'sobre mi arte')">sobre mi arte</button>
+            
+         </div>
+        <section id="Portafolio de dibujos" class="tabcontent">
+            <h2>Portafolio de dibujos</h2>
+            <h3>✧˖°.Ejemplos✧˖°.</h3>
+            <h4>Por ahora, solo hago comisiones para arte tradicional.</h4>
+            <div class="portafolio">
+            <img src="img/oikawa.jpg" alt="Oikawa Tooru">
+            <img src="img/tsukishima.jpg" alt="Tsukishima Kei">
+            <img src="img/hinata.jpg" alt="Hinata Shoyo">
+            <img src="img/atsumu.jpg" alt="Atsumu Miya">
+            </div>
+        </section>
+
+        <section id="¿Qué puedo y que no puedo dibujar?" class="tabcontent">
+            <h2>¿Qué puedo y que no puedo dibujar?</h2>
+            <div class="columnas">
+                <div class="Sí">
+                <h3>Sí</h3>
+                <ul>
+                    <li>Arte SFW (Safe for work)</li>
+                    <li>NSFW ligero (consultar)</li>
+                    <li>OC'S</li>
+                    <li>FanArt</li>
+                    <li>Gore ligero (Heridas, sangre)</li>
+                    <li>Fondos simples</li>
+                    <li>Semi-furry (Orejas, colas, etc...)</li>
+                    <li>Ships</li>
+                    <li>Diseño de personajes</li>
+                    <li>Personas reales (A mí estilo)</li>
+                    <li>Emotes</li>
+                    <li>Ponys</li>
+                    <li>Pokémon (consultar cuales)</li>
+                </ul>
+                </div>
+                <div class="No">
+                <h3>No</h3>
+                <ul>
+                <li>Arte NSFW (Not safe for work)</li>
+                <li>Furry</li>
+                <li>Mechas</li>
+                <li>Otros animales</li>
+                <li>Fondos Complejos</li>
+                <li>Gore fuerte</li>
+                <li>Armaduras</li>
+                <li>Robots</li>
+                <li>Otros estilos</li>
+                <li>Perspectivas Complicadas</li>
+                <li>Ships ilegales/incesto</li>
+                </ul>
+                </div>
+            </div>
+            </section>
+
+            <section id="Terminos y Condiciones" class="tabcontent">
+            <h2>Terminos y Condiciones</h2>
+            <h3>Al comprar una comisión usted está aceptando los siguiente terminos, lealos atentamente:</h3>
+            <div class="Terminos y Condiciones">
+                <ul>
+                    <li>Antes de que empiece el dibujo, debo recibir el 60% del dinero y al terminarlo, lo demás (no entregaré el dibujo si no se abona el pago completo), los medios de pago seran tranferencia a mí Mercado Pago o dinero en efectivo.</li>
+                    <li>Una vez iniciado el dibujo no aceptaré reembolsos de ningún tipo, así que estate seguro de tú compra por favor.</li>
+                    <li>Las modificaciones solo pueden ser pedidas durante el sketch. después no, porque complicaría mucho el trabajo.</li>
+                    <li>Si no me siento cómoda con el encargo, estoy en todo mí derecho de rechazarlo.</li>
+                    <li>Respetar el tiempo establecido según lo pedido y mí disponibilidad. Iré enviando avances por mí cuenta, así que no es necesario que me los pida.</li>
+                    <li>Debido a los constantes cambios de valor del peso argentino, la tabla de precios no estara publicada, si no que deberá ser pedida por mensaje directo.</li>
+                    <li>El dibujo será enviado por Gmail para evitar pérdida de calidad.</li>
+                    <li>La comisión será publicada en mis redes sociales a menos que el cliente no lo desee. Estoy en mí derecho de firmar mis trabajos.</li>
+                    <li>Una vez completado el pago, el dibujo pasa a ser de su propiedad, por lo que puede hacer lo que desee con él.</li>
+                    <li>Dependiendo de la distancia a la que haya que entregar el trabajo, es posible que se agregue un costo de envío a su comisión.</li>
+                    <li>Por favor, explica claramente como deseas tú comisión.</li>
+                </ul>
+            </section>
+
+
+        <section id="sobre mi arte" class="tabcontent">
+            <h2>Sobre mi arte</h2>
+            <p>Hago dibujos a pedido, ✰ ¡Así que no dudes en contactarme si estas interesado o tenés alguna duda! ✰ </p>
+            <ul>
+                <li>Instagram: <a href="https://www.instagram.com/mayolynx/">mayolynx</a></li>
+
+                </ul>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 @mayolynx. Todos los derechos reservados.</p>
+        </footer>
+
+        <script src="js/script.js"></script>
+        <div id="miModal" class="modal">
+            <span class="cerrar">&times;</span>
+            <img class="contenido-modal" id="imgModal">
+        </div>
+
+        <script src="js/script.js"></script>
+    </body>
+    </html>

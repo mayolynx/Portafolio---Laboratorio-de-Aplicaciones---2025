@@ -1,0 +1,172 @@
+.portafolio {
+    display: grid;/* Este es el cambio más importante. Pasamos de Flexbox a CSS Grid, que es mucho más potente para crear diseños de cuadrícula complejos.*/
+    grid-template-columns: repeat(2, 1fr); /* Crea 3 columnas de igual tamaño. repeat(3, 1fr) significa: "crea 3 columnas, y cada una debe ocupar una fracción (1fr) del espacio disponible" */
+    gap: 20px; /* Espacio entre las imágenes */
+    justify-items: center; /* Centra los elementos dentro de cada celda de la cuadrícula */
+    align-items: center; /* Centra los elementos verticalmente en cada celda */
+    padding: 20px; /* Espacio alrededor de toda la cuadrícula */
+    max-width: 1000px; /*limita el ancho máximo de la cuadrícula para que no se extienda demasiado en pantallas grandes */
+    margin: 0 auto; /*centra la cuadrícula si tiene un max-width */
+}
+
+.tabcontent {
+    display: none; 
+    padding: 20px;
+    border: 1px solid #c9c9c9;
+    border-top: none;
+    background-color: white;
+    }
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #fce4ec;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14 px 16 px;
+    transition: 0.3s;
+    font-size: 16px;
+    color: #d81b60;
+}
+
+/* al pasar el mouse por lo botenes se volvera mas oscuro */
+
+.tab button:hover {
+    background-color: #f8bbd0;
+}
+
+.tab button.active {
+    background-color: white;
+    border-bottom: 1px solid white;
+}
+
+.portafolio img {
+    width: 100%; /* La imagen ocupará el 100% del ancho de su celda FIJARME QUE HACE DESPUES EN GEMINI */
+    height: 300 px; /* Altura automatica para miniaturas uniformes, como Instagram */
+    object-fit: contain; /* Recorta la imagen para rellenar el espacio sin distorsión */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.columnas {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: flex-start;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.columnas h3 {
+    text-align: center;
+    color:#333;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+     position: relative;
+     margin-bottom: 10px;
+     padding-left: 20px;
+}
+
+ul li::before{
+    content: "✧";
+    color: #ff69b4;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+body {
+    font-family: sans-serif;
+    text-decoration:b ;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe4e1; /* Rosita pastel muy suave */
+    color: #333;
+    line-height: 1.6; /* Mejora la legibilidad del texto */
+}
+
+header {
+    background-color: #ffb6c1; /* Rosita pastel un poco más intenso */
+    color: white;
+    padding: 1em 0; /* Espaciado arriba y abajo */
+    text-align: center;
+    margin-bottom: 20px; /* Espacio debajo del encabezado */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Para alinear los elementos horizontalmente */
+    justify-content: center; /* Centra los enlaces */
+
+}
+
+nav ul li {
+    margin: 0 1em; /* Espacio entre los enlaces */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em; /* Espaciado alrededor de los enlaces */
+    border-radius: 5px; /* Bordes redondeados suaves */
+}
+
+nav a:hover {
+    background-color: #ff69b4; /* Un tono de rosa más fuerte al pasar el ratón */
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto; /* Centra las secciones horizontalmente */
+    background-color: white;
+    border-radius: 8px; /* Bordes más redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
+    max-width: 800px; /* Ancho máximo para el contenido */
+
+}
+
+h1, h2 {
+    color: #ff69b4; /* Tono de rosa para los títulos */
+    text-align: center; /* Centra los títulos */
+}
+
+.proyecto {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #f08080; /* Borde suave para los proyectos */
+    border-radius: 5px;
+    background-color: #fffafa; /* Fondo ligeramente más claro */
+}
+
+.proyecto h3 {
+    color: #ff80ab; /* Otro tono de rosa para los subtítulos de los proyectos */
+    margin-top: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #ffb6c1;
+    color: white;
+    width: 100%;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+}
